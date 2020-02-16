@@ -1,10 +1,11 @@
 ---
 title: "ankita_vignette"
-output: rmarkdown::html_vignette
+output: bookdown::html_document2
 vignette: >
   %\VignetteIndexEntry{ankita_vignette}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+bibliography: example.bib
 ---
 
 ```{r, include = FALSE}
@@ -15,7 +16,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(mysimplecompendium)
+#library(mysimplecompendium)
 ```
 
 
@@ -58,12 +59,23 @@ knitr::include_graphics("C://Users//ankit//OneDrive//Pictures//ct3.PNG")
 We can see in Figure \@ref(fig:my-fig)
 
 
-Blah blah [@Barba2019; @Leveque2012].
+Blah blah [@echeverria2017discovery; @barba2018terminologies].
 
-Stodden et al. says blah [-@Stodden2014].
+Stodden et al. says blah [-@plesser2018reproducibility].
 
-@Claerbout1992 says blah.
+@barba2018terminologies says blah.
 
-Blah blah [see [@Barba2019, pp. 33-35; also @Stodden2014, ch. 1].
+Blah blah [see [@echeverria2017discovery, pp. 33-35; also @plesser2018reproducibility, ch. 1].
 
 ## References cited
+
+library(tidyverse)
+data <- data(starwars)
+knitr::read_chunk("ext_file.R")
+```
+
+### A ggplot of starwars stuff
+## Q7:Uses knitr caching
+
+```{r starwars-plot, dependson="load-data", fig.align='center', cache=TRUE}
+```
