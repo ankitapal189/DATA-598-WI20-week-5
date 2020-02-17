@@ -23,9 +23,21 @@ library(mysimplecompendium)
 ## basic example code
 ```
 
-## Liscence
+## Licenses
+ [BEN - MIT](LICENSE.md)
+ 
+**Text and Figures:** CC-BY-4.0
 
-1. [BEN - MIT](LICENSE.md)
+**Code**: See the [DESCRIPTION](DESCRIPTION) file
+
+**Data**: CC-0 attribution requested in reuse
+
+## Code of Conduct
+
+Please note that the 'mysimplecompendium' project is released with a
+[Contributor Code of Conduct](CODE_OF_CONDUCT.md).
+By participating in this project, you agree to abide by its terms.
+
 
 
 ## Code if Conduct
